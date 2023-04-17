@@ -1,4 +1,5 @@
 const btnStart = document.querySelector('button[data-start]');
+console.log(btnStart);
 const btnStop = document.querySelector('button[data-stop]');
 
 let timerId = null;
@@ -13,7 +14,7 @@ function onStart() {
 
   timerId = setInterval(() => {
     let color = getRandomHexColor();
-    document.body.style.background = color;
+    document.body.style.backgroundColor = color;
   }, 1000);
 }
 
